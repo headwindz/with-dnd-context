@@ -1,0 +1,16 @@
+{
+  "name": "withdndcontexthoc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "n0ruSh",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dnd": "^7.4.5",
+    "react-dnd-html5-backend": "^7.4.4"
+  }
+}
