@@ -1,6 +1,6 @@
 {
   "name": "with-dnd-context",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A HOC solution for backend resuage issue in react-dnd",
   "main": "./lib/index.js",
   "scripts": {
@@ -9,6 +9,13 @@
     "pub:major": "npm version major && npm publish",
     "pub:minor": "npm version minor && npm publish",
     "pub:patch": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/n0ruSh/with-dnd-context.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n0ruSh/with-dnd-context/issues"
   },
   "author": "n0ruSh",
   "license": "MIT",
