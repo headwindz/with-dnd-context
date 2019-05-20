@@ -5,7 +5,10 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "rm -rf ./lib && tsc -p ./tsconfig.json",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "pub:major": "npm version major && npm publish",
+    "pub:minor": "npm version minor && npm publish",
+    "pub:patch": "npm version patch && npm publish"
   },
   "author": "n0ruSh",
   "license": "MIT",

@@ -1,6 +1,4 @@
-> ** with-dnd-context: a HOC solution for backend reusage issue in react-dnd **
-
-[![npm](https://img.shields.io/badge/version-1.0.2-orange.svg)](https://www.npmjs.com/package/with-dnd-context)
+> **with-dnd-context: a HOC solution for backend reusage issue in react-dnd**
 
 # Why
 
