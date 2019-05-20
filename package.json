@@ -1,7 +1,7 @@
 {
   "name": "with-dnd-context",
   "version": "1.0.0",
-  "description": "",
+  "description": "A HOC solution for backend resuage issue in react-dnd",
   "main": "./lib/index.js",
   "scripts": {
     "build": "rm -rf ./lib && tsc -p ./tsconfig.json",
@@ -17,6 +17,10 @@
   },
   "files": [
     "lib"
+  ],
+  "keywords": [
+    "react-dnd",
+    "backend reuse",
   ],
   "devDependencies": {
     "@types/hoist-non-react-statics": "^3.3.1",
