@@ -1,11 +1,7 @@
-import React  from "react";
-import {
-  DragDropContext,
-  DragDropContextConsumer,
-  ContextComponent
-} from "react-dnd";
+import React from 'react';
+import { DragDropContext, DragDropContextConsumer, ContextComponent } from 'react-dnd';
 import { BackendFactory } from 'dnd-core';
-import HTML5Backend from "react-dnd-html5-backend";
+import HTML5Backend from 'react-dnd-html5-backend';
 
 let defaultDragDropContext: <TargetClass extends React.ComponentType<any>>(
   DecoratedComponent: TargetClass

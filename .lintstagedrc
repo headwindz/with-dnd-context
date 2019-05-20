@@ -1,0 +1,11 @@
+{
+  "linters": {
+    "*.{ts,tsx,json}": ["prettier --write", "git add"], 
+    "index.ts": [
+      "tslint",
+    ]
+  },
+  "ignore": [
+    /node_modules/
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "extends": ["@commitlint/config-angular"],
+  "rules": {
+    "body-leading-blank": [2, "always"],
+    "subject-case": [0]
+  }
+}
