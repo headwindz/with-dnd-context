@@ -1,6 +1,6 @@
 {
   "name": "with-dnd-context",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A HOC solution for backend resuage issue in react-dnd",
   "main": "./lib/index.js",
   "scripts": {
