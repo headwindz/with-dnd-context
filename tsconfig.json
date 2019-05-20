@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "noUnusedParameters": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es5",
+    "module": "es6",
+    "lib": ["es2017"],
+  },
+  "exclude": ["node_modules", "dist"]
+}

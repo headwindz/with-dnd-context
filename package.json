@@ -1,16 +1,26 @@
 {
-  "name": "withdndcontexthoc",
+  "name": "with-dnd-context",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf ./lib && tsc -p ./tsconfig.json",
+    "prepublish": "npm run build"
   },
   "author": "n0ruSh",
   "license": "MIT",
   "dependencies": {
+    "dnd-core": "^7.4.4",
     "react": "^16.8.6",
     "react-dnd": "^7.4.5",
     "react-dnd-html5-backend": "^7.4.4"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@types/hoist-non-react-statics": "^3.3.1",
+    "@types/react": "^16.8.17",
+    "typescript": "^3.4.5"
   }
 }

@@ -1,23 +1,27 @@
-import React from "react";
+import React  from "react";
 import {
   DragDropContext,
   DragDropContextConsumer,
   ContextComponent
 } from "react-dnd";
+import { BackendFactory } from 'dnd-core';
 import HTML5Backend from "react-dnd-html5-backend";
 
 let defaultDragDropContext: <TargetClass extends React.ComponentType<any>>(
   DecoratedComponent: TargetClass
 ) => TargetClass & ContextComponent<any>;
 
-function getDefaultDragDropContext() {
+function getDefaultDragDropContext(backendFactory: BackendFactory) {
   if (!defaultDragDropContext) {
-    defaultDragDropContext = DragDropContext(HTML5Backend);
+    defaultDragDropContext = DragDropContext(backendFactory);
   }
   return defaultDragDropContext;
 }
 
-const withDndContext = (WrappedComponent: any) => {
+const withDndContext = (
+  WrappedComponent: React.ComponentType<any>,
+  backendFactory: BackendFactory = HTML5Backend
+): React.ComponentType<any> => {
   return (props: any) => {
     return (
       <DragDropContextConsumer>
@@ -25,7 +29,7 @@ const withDndContext = (WrappedComponent: any) => {
           if (value && value.dragDropManager != null) {
             return <WrappedComponent {...props} />;
           }
-          const Comp = getDefaultDragDropContext()(WrappedComponent);
+          const Comp = getDefaultDragDropContext(backendFactory)(WrappedComponent);
           return <Comp {...props} />;
         }}
       </DragDropContextConsumer>
