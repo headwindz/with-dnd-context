@@ -20,7 +20,7 @@
   ],
   "keywords": [
     "react-dnd",
-    "backend reuse",
+    "backend reuse"
   ],
   "devDependencies": {
     "@types/hoist-non-react-statics": "^3.3.1",
